@@ -1,0 +1,19 @@
+{
+  "name": "group-array-elements-interview-question",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aileen-r/group-array-elements-interview-question.git"
+  },
+  "author": "Aileen Rae",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aileen-r/group-array-elements-interview-question/issues"
+  },
+  "homepage": "https://github.com/aileen-r/group-array-elements-interview-question#readme"
+}
