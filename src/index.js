@@ -1,1 +1,5 @@
-console.log("Hello world 👋");
+import groupArrayElements from "./groupArrayEls";
+
+const result = groupArrayElements();
+
+console.log(result);
