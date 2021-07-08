@@ -2,7 +2,6 @@
   "name": "group-array-elements-interview-question",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
     "start": "npm run clean && parcel serve ./src/index.html",
@@ -23,9 +22,14 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
+    "@parcel/babel-plugin-transform-runtime": "^2.0.0-nightly.1823",
+    "@parcel/babel-preset-env": "^2.0.0-alpha.3",
     "babel-jest": "^27.0.6",
     "jest": "^27.0.6",
     "parcel": "^2.0.0-nightly.756",
     "rimraf": "^3.0.2"
-  }
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
 }
