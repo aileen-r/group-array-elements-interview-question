@@ -14,10 +14,16 @@ const groupArrayElements = (array, n) => {
     throw "'array' must be an array";
   }
   const result = [];
-  const groupSize = Math.ceil(array.length / n);
-    for (let i = 0; i < array.length; i += groupSize) {
+  const groupSize = Math.round(array.length / n);
+  for (let i = 0; i < array.length; i += groupSize) {
+    if (i === n) {
+      // add all remaining elements to final group
+      result[result.length - 1].push(...array.slice(i, array.length));
+      break;
+    } else {
       result.push(array.slice(i, i + groupSize));
     }
+  }
   return result;
 };
 

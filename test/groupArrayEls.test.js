@@ -46,4 +46,18 @@ describe("expected outputs", () => {
       [4, 5, 6],
     ]);
   });
+  test("edge cases where final group should have more elements", () => {
+    expect(groupArrayElements([1, 2, 3, 4], 3)).toStrictEqual([
+      [1],
+      [2],
+      [3, 4],
+    ]);
+    expect(groupArrayElements([1, 2, 3, 4, 5, 6, 7], 5)).toStrictEqual([
+      [1],
+      [2],
+      [3],
+      [4],
+      [5, 6, 7],
+    ]);
+  });
 });
