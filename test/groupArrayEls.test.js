@@ -5,12 +5,13 @@ const testOutputArray = [[1, 2], [3, 4], [5]];
 
 describe("input validation", () => {
   test("throws if N is not a positive integer", () => {
+    const errorMessage = "'n' must be a positive integer";
     expect(() => {
       groupArrayElements(testInputArray, -1);
-    }).toThrow("n must be a positive integer");
+    }).toThrow(errorMessage);
     expect(() => {
       groupArrayElements(testInputArray, 2.5);
-    }).toThrow("n must be a positive integer");
+    }).toThrow(errorMessage);
   });
 
   test("throws if 'array' is not an array", () => {
@@ -20,12 +21,13 @@ describe("input validation", () => {
   });
 
   test("throws if any method arguements are missing", () => {
+    const errorMessage = "Both 'array' and 'n' arguments are required";
     expect(() => {
       groupArrayElements(testInputArray);
-    }).toThrow("Both 'array' and 'n' arguments are required");
+    }).toThrow(errorMessage);
     expect(() => {
       groupArrayElements();
-    }).toThrow("Both 'array' and 'n' arguments are required");
+    }).toThrow(errorMessage);
   });
 });
 
